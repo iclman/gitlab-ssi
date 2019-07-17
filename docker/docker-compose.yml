@@ -1,5 +1,5 @@
 web:
-  image: 'gitlab/gitlab-ce:latest'
+  image: 'iclman/gitlab-ssi:latest'
   restart: always
   hostname: 'gitlab.example.com'
   environment:
