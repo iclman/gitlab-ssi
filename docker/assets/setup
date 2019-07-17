@@ -28,22 +28,22 @@ sed -i "s/\/etc\/gitlab\/gitlab.rb/\/assets\/gitlab.rb/" /opt/gitlab/embedded/co
 echo 'gitlab-docker' > /opt/gitlab/embedded/service/gitlab-rails/INSTALLATION_TYPE
 
 # Create groups
-groupadd -g 998 git
-groupadd -g 999 gitlab-www
-groupadd -g 997 gitlab-redis
-groupadd -g 996 gitlab-psql
+groupadd -g 5008 git
+groupadd -g 5009 gitlab-www
+groupadd -g 5007 gitlab-redis
+groupadd -g 5006 gitlab-psql
 
-groupadd -g 994 mattermost
-groupadd -g 993 registry
-groupadd -g 992 gitlab-prometheus
-groupadd -g 991 gitlab-consul
+groupadd -g 5004 mattermost
+groupadd -g 5003 registry
+groupadd -g 5002 gitlab-prometheus
+groupadd -g 5001 gitlab-consul
 
 # Create accounts
-useradd -m -u 998 -g git -m -s /bin/sh -d /var/opt/gitlab git
-useradd -m -u 999 -g gitlab-www -m -s /bin/false -d /var/opt/gitlab/nginx gitlab-www
-useradd -m -u 997 -g gitlab-redis -m -s /bin/false -d /var/opt/gitlab/redis gitlab-redis
-useradd -m -u 996 -g gitlab-psql -m -s /bin/sh -d /var/opt/gitlab/postgresql gitlab-psql
-useradd -m -u 994 -g mattermost -m -s /bin/sh -d /var/opt/gitlab/mattermost mattermost
-useradd -m -u 993 -g registry -m -s /bin/sh -d /var/opt/gitlab/registry registry
-useradd -m -u 992 -g gitlab-prometheus -m -s /bin/sh -d /var/opt/gitlab/prometheus gitlab-prometheus
-useradd -m -u 991 -g gitlab-consul -m -s /bin/sh -d /var/opt/gitlab/consul gitlab-consul
+useradd -m -u 5008 -g git -m -s /bin/sh -d /var/opt/gitlab git
+useradd -m -u 5009 -g gitlab-www -m -s /bin/false -d /var/opt/gitlab/nginx gitlab-www
+useradd -m -u 5007 -g gitlab-redis -m -s /bin/false -d /var/opt/gitlab/redis gitlab-redis
+useradd -m -u 5006 -g gitlab-psql -m -s /bin/sh -d /var/opt/gitlab/postgresql gitlab-psql
+useradd -m -u 5004 -g mattermost -m -s /bin/sh -d /var/opt/gitlab/mattermost mattermost
+useradd -m -u 5003 -g registry -m -s /bin/sh -d /var/opt/gitlab/registry registry
+useradd -m -u 5002 -g gitlab-prometheus -m -s /bin/sh -d /var/opt/gitlab/prometheus gitlab-prometheus
+useradd -m -u 5001 -g gitlab-consul -m -s /bin/sh -d /var/opt/gitlab/consul gitlab-consul
