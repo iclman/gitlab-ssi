@@ -1,0 +1,2 @@
+EXCLUDED_REPOS="ICE/ice-project2 GROUP1/project1"
+ALLOWED_LIST=("spice" "root" "gcladmin")
