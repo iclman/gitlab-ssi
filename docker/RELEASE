@@ -1,0 +1,3 @@
+RELEASE_PACKAGE=gitlab-ce
+RELEASE_VERSION=12.0.3-ce.0
+DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_12.0.3-ce.0_amd64.deb

@@ -13,7 +13,6 @@ build.txt
 Vagrantfile
 .idea
 *.log
-docker/RELEASE
 *.swp
 tags
 *.tags
